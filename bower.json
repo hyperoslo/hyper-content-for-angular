@@ -1,0 +1,25 @@
+{
+  "name": "hyp-content-for",
+  "version": "0.1.0",
+  "authors": [
+    "Sindre Moen <sindrenm@gmail.com>"
+  ],
+  "main": "hyp-content-for.js",
+  "keywords": [
+    "hyper",
+    "angular",
+    "content",
+    "yield",
+    "template",
+    "layout"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/hyperoslo/hyp-content-for-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

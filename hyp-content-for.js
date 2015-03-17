@@ -5,6 +5,8 @@ angular.module("hypContentFor", [])
     return {
       scope: { "for": "@" },
 
+      restrict: "E",
+
       transclude: true,
 
       controller: function ($scope, $transclude, HYP_CONTENT_FOR_IDS) {
@@ -16,6 +18,8 @@ angular.module("hypContentFor", [])
   .directive("hypYield", function ($interval, HYP_CONTENT_FOR_IDS) {
     return {
       scope: { to: "@" },
+
+      restrict: "E",
 
       link: function (scope, elem) {
         interval = null;

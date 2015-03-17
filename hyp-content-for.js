@@ -1,13 +1,13 @@
 angular.module("hypContentFor", [])
-  .constant("HYP_CONTENT_FOR_IDS", [ ])
+  .value("HYP_CONTENT_FOR_IDS", { })
 
-  .directive("content", function (HYP_CONTENT_FOR_IDS) {
+  .directive("content", function () {
     return {
       scope: { "for": "@" },
 
       transclude: true,
 
-      controller: function ($scope, $transclude) {
+      controller: function ($scope, $transclude, HYP_CONTENT_FOR_IDS) {
         HYP_CONTENT_FOR_IDS[$scope["for"]] = $transclude();
       }
     };
@@ -20,20 +20,12 @@ angular.module("hypContentFor", [])
       link: function (scope, elem) {
         interval = null;
 
-        repeatFn = function () {
-          content = HYP_CONTENT_FOR_IDS[scope.to];
+        watchFn = function () { return HYP_CONTENT_FOR_IDS[scope.to]; };
 
-          if (content) {
-            $interval.cancel(interval);
-          } else {
-            return;
-          }
-
-          elem.replaceWith(content);
-        }
-
-        repeatFn();
-        interval = $interval(repeatFn, 100, 9);
+        scope.$watch(watchFn, function (newValue) {
+          elem.empty();
+          elem.append(newValue);
+        });
       }
     };
   });

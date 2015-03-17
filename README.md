@@ -70,4 +70,6 @@ code, and if you're using this library we probably want to [hire you].
 
 ## License
 
-This project is available under the MIT license.
+This project is available under the MIT license. See the [LICENSE].
+
+[license]: https://github.com/hyperoslo/hyp-content-for-angular/blob/master/LICENSE.md

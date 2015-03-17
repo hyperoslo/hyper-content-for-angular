@@ -23,17 +23,17 @@ probably more code.
 ## Usage
 
 So how do you actually use this thing? It's quite simple, actually! The module
-exposes two directives, `content` and `yield`. The `content` directive wraps
-around the content and takes an ID through the `for` attribute. The `yield`
-directive is filled by the content that shares the same ID, passed through the
-attribute `to`. An example:
+exposes two directives, `hyp-content` and `hyp-yield`. The `hyp-content`
+directive wraps around the content and takes an ID through the `for` attribute.
+The `hyp-yield` directive is filled by the content that shares the same ID,
+passed through the attribute `to`. An example:
 
 _In the template file (e.g. index.html):_
 
 ```html
-<content for="header">
+<hyp-content for="header">
   <h2>All articles</h2>
-</content>
+</hyp-content>
 ```
 
 _In the layout file:_
@@ -41,7 +41,7 @@ _In the layout file:_
 ```html
 <header>
   <h1>Blog 2000</h1>
-  <yield to="header"></yield>
+  <hyp-yield to="header"></hyp-yield>
 </header>
 ```
 
@@ -50,9 +50,9 @@ _Resulting layout:_
 ```html
 <header>
   <h1>Blog 2000</h1>
-  <yield to="header">
+  <hyp-yield to="header">
     <h2>All articles</h2>
-  </yield>
+  </hyp-yield>
 </header>
 ```
 

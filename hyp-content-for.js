@@ -1,7 +1,7 @@
 angular.module("hypContentFor", [])
   .value("HYP_CONTENT_FOR_IDS", { })
 
-  .directive("content", function () {
+  .directive("hypContent", function () {
     return {
       scope: { "for": "@" },
 
@@ -13,7 +13,7 @@ angular.module("hypContentFor", [])
     };
   })
 
-  .directive("yield", function ($interval, HYP_CONTENT_FOR_IDS) {
+  .directive("hypYield", function ($interval, HYP_CONTENT_FOR_IDS) {
     return {
       scope: { to: "@" },
 

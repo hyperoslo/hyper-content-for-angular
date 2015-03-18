@@ -23,17 +23,17 @@ probably more code.
 ## Usage
 
 So how do you actually use this thing? It's quite simple, actually! The module
-exposes two directives, `hyp-content` and `hyp-yield`. The `hyp-content`
+exposes two directives, `hyper-content` and `hyper-yield`. The `hyper-content`
 directive wraps around the content and takes an ID through the `for` attribute.
-The `hyp-yield` directive is filled by the content that shares the same ID,
+The `hyper-yield` directive is filled by the content that shares the same ID,
 passed through the attribute `to`. An example:
 
 _In the template file (e.g. index.html):_
 
 ```html
-<hyp-content for="header">
+<hyper-content for="header">
   <h2>All articles</h2>
-</hyp-content>
+</hyper-content>
 ```
 
 _In the layout file:_
@@ -41,7 +41,7 @@ _In the layout file:_
 ```html
 <header>
   <h1>Blog 2000</h1>
-  <hyp-yield to="header"></hyp-yield>
+  <hyper-yield to="header"></hyper-yield>
 </header>
 ```
 
@@ -50,9 +50,9 @@ _Resulting layout:_
 ```html
 <header>
   <h1>Blog 2000</h1>
-  <hyp-yield to="header">
+  <hyper-yield to="header">
     <h2>All articles</h2>
-  </hyp-yield>
+  </hyper-yield>
 </header>
 ```
 
@@ -74,4 +74,4 @@ code, and if you're using this library we probably want to [hire you].
 
 This project is available under the MIT license. See the [LICENSE].
 
-[license]: https://github.com/hyperoslo/hyp-content-for-angular/blob/master/LICENSE.md
+[license]: https://github.com/hyperoslo/hyper-content-for-angular/blob/master/LICENSE.md

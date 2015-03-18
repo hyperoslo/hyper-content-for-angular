@@ -1,4 +1,4 @@
-# hyp-content-for
+# hyper-content-for
 
 Allows you to store HTML for use (and re-use) later.
 

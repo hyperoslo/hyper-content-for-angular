@@ -15,7 +15,7 @@ angular.module("hyperContentFor", [])
     };
   })
 
-  .directive("hyperYield", function ($interval, HYPER_CONTENT_FOR_IDS) {
+  .directive("hyperYield", function (HYPER_CONTENT_FOR_IDS) {
     return {
       scope: { to: "@" },
 

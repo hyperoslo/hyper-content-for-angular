@@ -1,0 +1,24 @@
+{
+  "name": "hyper-content-for",
+  "version": "0.1.0",
+  "description": "Allows you to store HTML for use (and re-use) later.",
+  "main": "hyper-content-for.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "hyperoslo/hyper-content-for-angular",
+  "keywords": [
+    "hyper",
+    "angular",
+    "content",
+    "yield",
+    "template",
+    "layout"
+  ],
+  "author": "Sindre Moen <sindrenm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyperoslo/hyper-content-for-angular/issues"
+  },
+  "homepage": "https://github.com/hyperoslo/hyper-content-for-angular"
+}

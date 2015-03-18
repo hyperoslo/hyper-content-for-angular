@@ -1,10 +1,10 @@
 {
-  "name": "hyp-content-for",
+  "name": "hyper-content-for",
   "version": "0.1.0",
   "authors": [
     "Sindre Moen <sindrenm@gmail.com>"
   ],
-  "main": "hyp-content-for.js",
+  "main": "hyper-content-for.js",
   "keywords": [
     "hyper",
     "angular",
@@ -14,7 +14,7 @@
     "layout"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/hyperoslo/hyp-content-for-angular",
+  "homepage": "https://github.com/hyperoslo/hyper-content-for-angular",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hyperoslo/hyper-content-for-angular.git"
-  },
+  "repository": "hyperoslo/hyper-content-for-angular",
   "keywords": [
     "hyper",
     "angular",

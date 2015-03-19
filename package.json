@@ -4,7 +4,7 @@
   "description": "Allows you to store HTML for use (and re-use) later.",
   "main": "hyper-content-for.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/karma/bin/karma start --single-run"
   },
   "repository": "hyperoslo/hyper-content-for-angular",
   "keywords": [

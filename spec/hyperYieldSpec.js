@@ -9,7 +9,7 @@ describe('hyper-yield tag', function() {
     $rootScope = _$rootScope_;
   }));
 
-  it('Replace with content from matching hyper-content', function() {
+  it('is replaced with content from matching hyper-content', function() {
     var contentForElement = $compile("<hyper-content to='header'><h2>Content for header</h2></hyper-yield>")($rootScope);
     var yieldToElement = $compile("<hyper-yield from='header'><h2>Default</h2></hyper-yield>")($rootScope);
 

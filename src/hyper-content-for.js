@@ -22,7 +22,6 @@ angular.module('hyperContentFor', [])
       restrict: 'E',
 
       link: function(scope, elem) {
-        interval = null;
 
         watchFn = function() { return HYPER_CONTENT_FOR_IDS[scope.to]; };
 

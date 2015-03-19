@@ -10,11 +10,11 @@ describe('hyper-yield tag', function() {
   }));
 
   it('Replace with content from matching hyper-content', function() {
-    var element = $compile("<hyper-content to='header'><h2>Content for header</h2></hyper-yield>")($rootScope);
-    var element = $compile("<hyper-yield from='header'><h2>Default</h2></hyper-yield>")($rootScope);
+    var contentForElement = $compile("<hyper-content to='header'><h2>Content for header</h2></hyper-yield>")($rootScope);
+    var yieldToElement = $compile("<hyper-yield from='header'><h2>Default</h2></hyper-yield>")($rootScope);
 
     $rootScope.$digest();
 
-    expect(element.html()).toContain("<h2 class=\"ng-scope\">Content for header</h2>");
+    expect(yieldToElement.html()).toContain("<h2 class=\"ng-scope\">Content for header</h2>");
   });
 });

@@ -6,7 +6,7 @@ module.exports = function(config) {
             'node_modules/angular/angular.min.js',
             'node_modules/angular-mocks/angular-mocks.js',
             'spec/*Spec.js',
-            'hyper-content-for.js'
+            'src/hyper-content-for.js'
         ]
     });
 };

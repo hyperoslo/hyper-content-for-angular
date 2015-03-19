@@ -1,25 +1,25 @@
-angular.module("hyperContentFor", [])
-  .value("HYPER_CONTENT_FOR_IDS", { })
+angular.module('hyperContentFor', [])
+  .value('HYPER_CONTENT_FOR_IDS', { })
 
-  .directive("hyperContent", function() {
+  .directive('hyperContent', function() {
     return {
-      scope: { "for": "@" },
+      scope: { 'for': '@' },
 
-      restrict: "E",
+      restrict: 'E',
 
       transclude: true,
 
       controller: function($scope, $transclude, HYPER_CONTENT_FOR_IDS) {
-        HYPER_CONTENT_FOR_IDS[$scope["for"]] = $transclude();
+        HYPER_CONTENT_FOR_IDS[$scope['for']] = $transclude();
       }
     };
   })
 
-  .directive("hyperYield", function(HYPER_CONTENT_FOR_IDS) {
+  .directive('hyperYield', function(HYPER_CONTENT_FOR_IDS) {
     return {
-      scope: { to: "@" },
+      scope: { to: '@' },
 
-      restrict: "E",
+      restrict: 'E',
 
       link: function(scope, elem) {
         interval = null;

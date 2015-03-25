@@ -7,6 +7,8 @@ module.exports = function(config) {
             'node_modules/angular-mocks/angular-mocks.js',
             'spec/*Spec.js',
             'src/hyper-content-for.js'
-        ]
+        ],
+
+        browsers: ['Chrome', 'PhantomJS']
     });
 };

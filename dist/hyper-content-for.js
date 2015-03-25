@@ -2,7 +2,7 @@
 require('../hyper-content-for');
 require('../values/hyper-content-for-ids');
 
-angular.module('hyperContentFor')
+module.exports = angular.module('hyperContentFor')
   .directive('hyperContent', function() {
     return {
       scope: { 'for': '@' },
@@ -21,7 +21,7 @@ angular.module('hyperContentFor')
 require('../hyper-content-for');
 require('../values/hyper-content-for-ids');
 
-angular.module('hyperContentFor')
+module.exports = angular.module('hyperContentFor')
   .directive('hyperYield', function(HYPER_CONTENT_FOR_IDS) {
     return {
       scope: { to: '@' },

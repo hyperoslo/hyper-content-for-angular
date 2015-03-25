@@ -32,6 +32,8 @@ module.exports = angular.module('hyperContentFor')
         watchFn = function() { return HYPER_CONTENT_FOR_IDS[scope.to]; };
 
         scope.$watch(watchFn, function(newValue) {
+          if (!newValue) return;
+
           elem.empty();
           elem.append(newValue);
         });

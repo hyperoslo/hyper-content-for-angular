@@ -21,4 +21,14 @@ describe('hyper-yield tag', function() {
 
     expect(yieldElement.html()).toContain('<h2>Sub-header in yield</h2>');
   });
+
+  it('transcludes the content if the from value is not present in HYPER_CONTENT_FOR_IDS', function() {
+    delete HYPER_CONTENT_FOR_IDS['header'];;
+
+    var yieldElement = $compile('<hyper-yield to="header"><h2>Sample content</h2></hyper-yield>')($rootScope);
+
+    $rootScope.$digest();
+
+    expect(yieldElement.html()).toContain('<h2>Sample content</h2>');
+  });
 });

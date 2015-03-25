@@ -1,3 +1,5 @@
+require('../../src/directives/hyper-yield');
+
 describe('hyper-yield tag', function() {
   var $compile,
       $rootScope,

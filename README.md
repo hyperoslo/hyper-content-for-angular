@@ -1,24 +1,15 @@
 # hyper-content-for
 
-Allows you to store HTML for use (and re-use) later.
+Inject content into a different part of your page.
 
 ## Description
 
-This module adds a couple of directives that allows you to store blocks of HTML
-for use other places in your application. It is highly inspired by the Ruby on
-Rails view helper `content_for`, and it is useful in cases where you have a
-layout file and template files and need to alter the layout based on which
-template you are currently displaying.
+This module adds directives that allow you to store blocks of HTML for use other
+places in your application. It is inspired by the Ruby on Rails view helper `content_for`,
+which is useful when you need to change something outside of the view's own scope.
 
-Why not just put the data that you want to keep dynamic on a scope variable on
-the _$rootScope_ and change that data in each template's controller? Well, first
-of all, polluting the $rootScope is generally considered a bad practice, just
-like leaking variables onto your global (`window`) scope in JavaScript in
-general. Furthermore, if you need to change more than just a plain text – like
-multiple HTML elements – this method quickly gets out of hands. And you would
-need to write HTML in your Angular JavaScript code. And you would need to use
-`ng-bind-html` so that the HTML is not automatically sanitized. And it's
-probably more code.
+Another way to accomplish this is to use `$rootScope`, but that's generally considered
+bad practice (much like leaking variables onto your `window` scope in plain JavaScript).
 
 ## Usage
 

@@ -68,7 +68,7 @@ $ bower install --save hyper-content-for
 If you're using npm, use the `npm` executable instead:
 
 ```
-$ bower install --save hyper-content-for
+$ npm install --save hyper-content-for
 ```
 
 If you like to live on the edge, feel free to download the file from our [GitHub

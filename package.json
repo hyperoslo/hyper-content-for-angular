@@ -2,7 +2,7 @@
   "name": "hyper-content-for",
   "version": "1.0.0",
   "description": "Allows you to store HTML for use (and re-use) later.",
-  "main": "hyper-content-for.js",
+  "main": "dist/hyper-content-for.js",
   "scripts": {
     "prepublish": "node_modules/browserify/bin/cmd.js src/hyper-content-for.js -o dist/hyper-content-for.js",
     "test": "node_modules/karma/bin/karma start --single-run --browsers PhantomJS"

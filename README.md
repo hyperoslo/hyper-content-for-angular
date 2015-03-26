@@ -1,5 +1,9 @@
 # hyper-content-for
 
+Inject content into a different part of your page.
+
+## Description
+
 This module adds directives that allow you to store blocks of HTML for use other
 places in your application. It is inspired by the Ruby on Rails view helper `content_for`,
 which is useful when you need to change something outside of the view's own scope.

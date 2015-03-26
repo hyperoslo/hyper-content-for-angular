@@ -1,6 +1,6 @@
 {
   "name": "hyper-content-for",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Allows you to store HTML for use (and re-use) later.",
   "main": "hyper-content-for.js",
   "scripts": {

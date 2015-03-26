@@ -56,6 +56,26 @@ _Resulting layout:_
 </header>
 ```
 
+## Installation
+
+This module is hosted on npm and Bower. To install it into your application, use
+the appropriate command line tool. If you're using Bower:
+
+```
+$ bower install --save hyper-content-for
+```
+
+If you're using npm, use the `npm` executable instead:
+
+```
+$ npm install --save hyper-content-for
+```
+
+If you like to live on the edge, feel free to download the file from our [GitHub
+repository] as well. Just keep in mind that it might not always be stable.
+
+[github repository]: https://github.com/hyperoslo/hyper-content-for-angular
+
 ## Contributing
 
 Please check our [playbook] for guidelines on contributing.

@@ -16,12 +16,10 @@
   "license": "MIT",
   "homepage": "https://github.com/hyperoslo/hyper-content-for-angular",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "spec",
-    "tests"
+    "**/*",
+    "!dist/**/*",
+    "!LICENSE.md",
+    "!README.md"
   ],
   "dependencies": {
     "angular": "~1.3"

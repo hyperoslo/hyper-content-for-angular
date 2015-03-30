@@ -4,7 +4,7 @@
   "authors": [
     "Sindre Moen <sindrenm@gmail.com>"
   ],
-  "main": "hyper-content-for.js",
+  "main": "dist/hyper-content-for.js",
   "keywords": [
     "hyper",
     "angular",

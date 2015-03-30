@@ -2,7 +2,7 @@
   "name": "hyper-content-for",
   "version": "1.0.0",
   "description": "Allows you to store HTML for use (and re-use) later.",
-  "files": [ "dist/" ],
+  "files": [ "dist/", "LICENSE.md", "README.md" ],
   "main": "dist/hyper-content-for.js",
   "scripts": {
     "prepublish": "node_modules/browserify/bin/cmd.js index.js -o dist/hyper-content-for.js",

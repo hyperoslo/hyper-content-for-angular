@@ -17,7 +17,9 @@
   "homepage": "https://github.com/hyperoslo/hyper-content-for-angular",
   "ignore": [
     "**/*",
-    "!dist/**/*"
+    "!dist/**/*",
+    "!LICENSE.md",
+    "!README.md"
   ],
   "dependencies": {
     "angular": "~1.3"

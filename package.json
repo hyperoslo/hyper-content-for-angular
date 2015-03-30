@@ -4,7 +4,7 @@
   "description": "Allows you to store HTML for use (and re-use) later.",
   "main": "dist/hyper-content-for.js",
   "scripts": {
-    "prepublish": "node_modules/browserify/bin/cmd.js src/hyper-content-for.js -o dist/hyper-content-for.js",
+    "prepublish": "node_modules/browserify/bin/cmd.js index.js -o dist/hyper-content-for.js",
     "test": "node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": "hyperoslo/hyper-content-for-angular",

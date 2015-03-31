@@ -11,7 +11,7 @@ module.exports = angular.module('hyperContentFor')
 
       transclude: true,
 
-      controller: ["$scope", "$transclude", "HYPER_CONTENT_FOR_IDS", function($scope, $transclude, HYPER_CONTENT_FOR_IDS) {
+      controller: ['$scope', '$transclude', 'HYPER_CONTENT_FOR_IDS', function($scope, $transclude, HYPER_CONTENT_FOR_IDS) {
         HYPER_CONTENT_FOR_IDS[$scope['for']] = $transclude();
       }]
     };
@@ -22,7 +22,7 @@ require('../hyper-content-for');
 require('../values/hyper-content-for-ids');
 
 module.exports = angular.module('hyperContentFor')
-  .directive('hyperYield', ["HYPER_CONTENT_FOR_IDS", function(HYPER_CONTENT_FOR_IDS) {
+  .directive('hyperYield', ['HYPER_CONTENT_FOR_IDS', function(HYPER_CONTENT_FOR_IDS) {
     return {
       scope: { to: '@' },
 

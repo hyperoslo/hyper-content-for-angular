@@ -19,6 +19,12 @@ directive wraps around the content and takes an ID through the `for` attribute.
 The `hyper-yield` directive is filled by the content that shares the same ID,
 passed through the attribute `to`. An example:
 
+In your main script file you should add it as dependency:
+
+```javascript
+var app = angular.module('app', ['hyperContentFor']);
+```
+
 _In the template file (e.g. index.html):_
 
 ```html

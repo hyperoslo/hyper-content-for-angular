@@ -13,12 +13,15 @@ bundler.on('update', bundle);
 bundler.on('log', gutil.log);
 
 function bundle() {
-  return bundler.bundle()
+  return bundler.transform('browserify-ngannotate', { 'single_quotes': true })
+    .bundle()
     .on('error', gutil.log.bind(gutil, 'Bundle Error'))
     .pipe(source('hyper-content-for.js'))
     .pipe(gulp.dest('./dist'));
 }
 
-gulp.task('build', bundle);
+gulp.task('bundle', bundle);
+
+gulp.task('build', ['bundle']);
 
 gulp.task('default', ['build']);

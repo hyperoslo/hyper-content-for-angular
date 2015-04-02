@@ -19,12 +19,6 @@ directive wraps around the content and takes an ID through the `for` attribute.
 The `hyper-yield` directive is filled by the content that shares the same ID,
 passed through the attribute `to`. An example:
 
-In your main script file you should add it as dependency:
-
-```javascript
-var app = angular.module('app', ['hyperContentFor']);
-```
-
 _In the template file (e.g. index.html):_
 
 ```html
@@ -72,6 +66,12 @@ If you like to live on the edge, feel free to download the file from our [GitHub
 repository] as well. Just keep in mind that it might not always be stable.
 
 [github repository]: https://github.com/hyperoslo/hyper-content-for-angular
+
+Either way, you'll want to add it as a dependency to your main module:
+
+```javascript
+var app = angular.module('app', ['hyperContentFor']);
+```
 
 ## Contributing
 
